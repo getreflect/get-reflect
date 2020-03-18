@@ -1,0 +1,19 @@
+/* Import and Name Fonts */
+@font-face {
+    font-family: Circular; 
+    src: url(circular.ttf); 
+}
+
+@font-face {
+    font-family: Circular Light;
+    src: url(circular-light.ttf);
+}
+
+/* Text Style */
+body {
+    font-family: Circular;
+}
+
+ul {
+    font-family: Circular Light;
+}
