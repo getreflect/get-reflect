@@ -11,9 +11,50 @@
 
 /* Text Style */
 body {
-    font-family: Circular;
+    font-family: Circular Light;
+    background-color: #8B9AC0;
+    color: white;
+    padding-left: 100px;
 }
 
-ul {
-    font-family: Circular Light;
+h1 { 
+    padding-top: 120px;
+}
+
+h2 {
+    padding-top: 200px;
+    text-align: center;
+    padding-right: 100px;
+}
+
+h4 {
+    float: right;
+    padding-right: 20px;
+}
+
+/* Images Style  */
+.logo {
+    width: 79px;
+    height: 89px;
+}
+
+.im_ready {
+    width: 149px;
+    height: 46px;
+}
+
+.support_us {
+    float: right;
+    width: 149px;
+    height: 46px;
+    padding-top: 14px;
+    padding-right: 50px;
+}
+
+.mockup {
+    float: right; 
+    width: 500px;
+    height: 375px;
+    padding-right: 100px;
+    padding-top: 50px;
 }
