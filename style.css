@@ -9,52 +9,115 @@
     src: url(circular-light.ttf);
 }
 
-/* Text Style */
+/* Body */
 body {
     font-family: Circular Light;
-    background-color: #8B9AC0;
     color: white;
-    padding-left: 100px;
+    background-image:
+    linear-gradient(
+        #8B9AC0, white
+    );
 }
 
-h1 { 
-    padding-top: 120px;
-}
-
-h2 {
-    padding-top: 200px;
-    text-align: center;
-    padding-right: 100px;
-}
-
-h4 {
+/* Navigation Bar  */
+.header ul {
     float: right;
-    padding-right: 20px;
+    padding-right: 10em;
+    list-style: none;
+}
+
+.header li {
+    display: inline;
+    padding-left: 1em;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+a {
+    font-family: Circular Light;
+    color: white;
+}
+
+a:hover {
+    color:rgba(255, 255, 255, 0.822);
+}
+
+/* Splash Page */
+h1 { 
+    padding-top: 5em;
+}
+
+.splashText {
+    padding-left: 8em;
+}
+
+/* Intro */
+.introDescription {
+    padding-right: 8em;
+    padding-left: 8em;
+}
+.intro h2 {
+    padding-top: 1em;
+}
+/* Features */
+.features h2 {
+    padding-top: 1em;
+    text-align: center;
+    color: #8B9AC0;
+    
+}
+
+/* Buttons */
+.white_button {
+    background-color: white;
+    border: none;
+    color: #8B9AC0;
+    padding: .65em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 1em;
+  }
+
+.white_button:hover {
+    background-color:rgba(255, 255, 255, 0.822);
+    color: #8B9AC0;
+}
+
+.blue_button {
+    background-color: #8B9AC0;
+    border: none;
+    color: white;
+    padding: .65em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 1em;
+
+}
+
+.blue_button:hover {
+    background-color: white;
+    color: #8B9AC0;
 }
 
 /* Images Style  */
 .logo {
-    width: 79px;
-    height: 89px;
+    max-width: 79px;
+    max-height: 89px;
+    width: auto;
+    height: auto;
+    padding-left: 1.5em;
 }
-
-.im_ready {
-    width: 149px;
-    height: 46px;
-}
-
-.support_us {
-    float: right;
-    width: 149px;
-    height: 46px;
-    padding-top: 14px;
-    padding-right: 50px;
-}
-
 .mockup {
     float: right; 
-    width: 500px;
-    height: 375px;
-    padding-right: 100px;
-    padding-top: 50px;
+    max-width: 836px;
+    max-height: 728px;
+    width: auto;
+    height: auto; 
 }
+
