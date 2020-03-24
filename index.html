@@ -6,30 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>reflect.</title>
 
+    <!-- Import Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jackyzha0/lite.css@latest/src/lite.min.css"/>
+    
     <!--Link to CSS File-->
     <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
-    <!-- Logo -->
-    <img src="images/logo.png" class="logo" alt="logo">
+    <div class = "lt-content-column">
+    <!-- Header -->
+    <div class="header">
+        <!-- Logo -->
+        <a href="#">
+            <img src="images/logo.png" class="logo lt-flex-33" alt="logo">
+        </a>
+        <!-- Navigation Bar -->
+        <ul class="lt-flex-66">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">features</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#" class="white_button">support us</a></li>
+        </ul>
+    </div>
 
-    <!-- Top Banner -->
-    <img src="images/support_us.png" class="support_us" alt="support us button">
-    <h4>features</h4>
-    <h4>contact</h4>
-    <h4>home </h4>
-    
-    <!-- Main Page -->
-    <img src="images/mockup.png" class="mockup" alt="mockup" >
-    <h1>reflect.</h1>
-    
-    <p>a website blocker for the <br> productive.</p> 
-    <img src="images/i'm_ready.png" class="im_ready" alt="i'm ready button">
-    
-    <!-- Features Section -->
-    <h2> all the features you need</h2>
-    
+    <!-- Splash Page -->
+    <div class="splash lt-flex-row">
+        <div class="splashText lt-flex-33"> 
+            <h1>reflect.</h1>
+            <p>a website blocker for the <br> productive.</p> 
+            <a href="#" class="white_button">i'm ready</a>
+        </div>
+
+        <img src="images/mockup.png" class="mockup lt-flex-66" alt="mockup">
+    </div>
+    <!-- Product Intro -->
+    <div class="intro lt-centre">
+        <h2> what we're about</h2>
+        <div class="introDescription">
+            <p>
+                reflect is a digitally mindful chrome extension that 
+                encourages users to reflect on their relationship with technology. 
+                <br><br>
+                when you attempt to visit distracting websites, reflect will ask you 
+                what your intention in doing so is. if you have a valid reason, 
+                you are allowed to enter the website; if not, you are encouraged to reflect further. 
+            </p>
+        </div>
+    </div>
+    <!-- Features -->
+    <div class="features lt-centre">
+        <h2>all the features you need</h2>
+        <a href="#" class="blue_button">install now</a>
+    </div>
+</div>
     <!--Link to JavaScript File-->
     <script src="script.js"></script>  
     <noscript>Need to enable JavaScript to view the full site!</noscript>
