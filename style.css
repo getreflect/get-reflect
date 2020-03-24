@@ -1,4 +1,4 @@
-/* Import and Name Fonts */
+/* Fonts and Colours */
 @font-face {
     font-family: Circular; 
     src: url(circular.ttf); 
@@ -9,20 +9,40 @@
     src: url(circular-light.ttf);
 }
 
+:root {
+    --white: #FFFFFF;
+    --lightblue: #8B9AC0;
+    --darkblue: #576CA8;
+    --lightgrey: #DAE0E5;
+}
+
 /* Body */
 body {
     font-family: Circular Light;
-    color: white;
+    color: var(--white);
     background-image:
-    linear-gradient(
-        #8B9AC0, white
-    );
+    linear-gradient(var(--darkblue), var(--white));
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+p {
+    font-size: 1.25em;
 }
 
 /* Navigation Bar  */
+.header {
+    padding-top: .5em;
+}
+
 .header ul {
     float: right;
-    padding-right: 10em;
     list-style: none;
 }
 
@@ -37,41 +57,33 @@ body {
 
 a {
     font-family: Circular Light;
-    color: white;
+    color: var(--white);
 }
 
 a:hover {
-    color:rgba(255, 255, 255, 0.822);
+    color:var(--lightgrey);
 }
 
 /* Splash Page */
 h1 { 
-    padding-top: 5em;
-}
-
-.splashText {
-    padding-left: 8em;
+    padding-top: 3em;
 }
 
 /* Intro */
-.introDescription {
-    padding-right: 8em;
-    padding-left: 8em;
-}
 .intro h2 {
-    padding-top: 1em;
+    padding-top: 0.5em;
 }
+
 /* Features */
 .features h2 {
     padding-top: 1em;
     text-align: center;
-    color: #8B9AC0;
-    
+    color: var(--darkblue);
 }
 
 /* Buttons */
 .white_button {
-    background-color: white;
+    background-color: var(--white);
     border: none;
     color: #8B9AC0;
     padding: .65em 1.5em;
@@ -83,14 +95,14 @@ h1 {
   }
 
 .white_button:hover {
-    background-color:rgba(255, 255, 255, 0.822);
-    color: #8B9AC0;
+    background-color:var(--lightgrey);
+    color: var(--lightblue);
 }
 
 .blue_button {
-    background-color: #8B9AC0;
+    background-color: var(--darkblue);
     border: none;
-    color: white;
+    color: var(--white);
     padding: .65em 1.5em;
     text-align: center;
     text-decoration: none;
@@ -101,22 +113,20 @@ h1 {
 }
 
 .blue_button:hover {
-    background-color: white;
-    color: #8B9AC0;
+    background-color: var(--white);
+    color: var(--lightblue);
 }
 
 /* Images Style  */
 .logo {
-    max-width: 79px;
-    max-height: 89px;
+    max-width: 85px;
     width: auto;
     height: auto;
-    padding-left: 1.5em;
 }
+
 .mockup {
     float: right; 
-    max-width: 836px;
-    max-height: 728px;
+    max-width: 700px;
     width: auto;
     height: auto; 
 }
