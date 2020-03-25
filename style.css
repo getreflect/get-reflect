@@ -32,6 +32,10 @@ h2 {
     font-size: 1.75em;
 }
 
+h3 {
+    font-size: 1.4em;
+}
+
 p {
     font-size: 1.25em;
 }
@@ -71,15 +75,37 @@ h1 {
 
 /* Intro */
 .intro h2 {
-    padding-top: 0.5em;
+    padding-top: 0.25em;
 }
 
 /* Features */
 .features h2 {
-    padding-top: 1em;
+    padding-top: 2em;
     text-align: center;
     color: var(--darkblue);
 }
+
+.features h3 {
+    color: var(--darkblue);
+}
+
+.features p {
+    font-size: 1em;
+    color: var(--lightblue);
+}
+
+.futureFeatures {
+    padding-top: 1em;
+}
+.install {
+    padding-top: 4em;
+}
+
+/* Footer */
+.footerImage {
+    width: 100%;
+  }
+
 
 /* Buttons */
 .white_button {
@@ -107,9 +133,10 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1.5em;
     border-radius: 1em;
-
+    position: relative;
+    top: 250px;
 }
 
 .blue_button:hover {
@@ -131,3 +158,9 @@ h1 {
     height: auto; 
 }
 
+.personalizationIcon, .privacyIcon, .feedbackIcon {
+    max-width: 130px;
+    width: auto;
+    height: auto;
+    padding-top: 1.25em;
+}
