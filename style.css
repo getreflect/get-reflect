@@ -22,6 +22,7 @@ body {
     color: var(--white);
     background-image:
     linear-gradient(var(--darkblue), var(--white));
+    margin: 0;
 }
 
 h1 {
@@ -29,11 +30,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.6em;
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: 1.75em;
 }
 
 p {
@@ -73,29 +74,42 @@ h1 {
     padding-top: 3em;
 }
 
+
 /* Intro */
-.intro h2 {
+.intro h1 {
     padding-top: 0.25em;
+    font-size: 2.25em;
 }
 
 /* Features */
-.features h2 {
-    padding-top: 2em;
+.features h1 {
+    padding-top: 3em;
     text-align: center;
     color: var(--darkblue);
+    font-size: 2.25em;
 }
 
-.features h3 {
+.features h2 {
     color: var(--darkblue);
 }
 
 .features p {
-    font-size: 1em;
+    font-size: 1.15em;
     color: var(--lightblue);
 }
 
+.currentFeatures {
+    padding-bottom: 5em;
+}
+
+.currentFeatures p {
+    color: var(--white);
+}
+    
+
+
 .futureFeatures {
-    padding-top: 1em;
+    padding-top: 7em;
 }
 .install {
     padding-top: 4em;
@@ -104,6 +118,26 @@ h1 {
 /* Footer */
 .footerImage {
     width: 100%;
+    
+  }
+.footer {
+    position: relative;
+}
+
+.footerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.dot {
+    height: 75px;
+    width: 75px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: inline-block;
+
   }
 
 
@@ -136,7 +170,7 @@ h1 {
     font-size: 1.5em;
     border-radius: 1em;
     position: relative;
-    top: 250px;
+
 }
 
 .blue_button:hover {
@@ -159,8 +193,8 @@ h1 {
 }
 
 .personalizationIcon, .privacyIcon, .feedbackIcon {
-    max-width: 130px;
+    max-width: 150px;
     width: auto;
     height: auto;
-    padding-top: 1.25em;
-}
+    padding-top: 3em;
+
