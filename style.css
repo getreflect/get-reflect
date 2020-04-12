@@ -22,6 +22,7 @@ body {
     color: var(--white);
     background-image:
     linear-gradient(var(--darkblue), var(--white));
+    margin: 0;
 }
 
 h1 {
@@ -29,6 +30,10 @@ h1 {
 }
 
 h2 {
+    font-size: 1.6em;
+}
+
+h3 {
     font-size: 1.75em;
 }
 
@@ -69,17 +74,72 @@ h1 {
     padding-top: 3em;
 }
 
+
 /* Intro */
-.intro h2 {
-    padding-top: 0.5em;
+.intro h1 {
+    padding-top: 0.25em;
+    font-size: 2.25em;
 }
 
 /* Features */
-.features h2 {
-    padding-top: 1em;
+.features h1 {
+    padding-top: 3em;
     text-align: center;
     color: var(--darkblue);
+    font-size: 2.25em;
 }
+
+.features h2 {
+    color: var(--darkblue);
+}
+
+.features p {
+    font-size: 1.15em;
+    color: var(--lightblue);
+}
+
+.currentFeatures {
+    padding-bottom: 5em;
+}
+
+.currentFeatures p {
+    color: var(--white);
+}
+    
+
+
+.futureFeatures {
+    padding-top: 7em;
+}
+.install {
+    padding-top: 4em;
+}
+
+/* Footer */
+.footerImage {
+    width: 100%;
+    
+  }
+.footer {
+    position: relative;
+}
+
+.footerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.dot {
+    height: 75px;
+    width: 75px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: inline-block;
+
+  }
+
 
 /* Buttons */
 .white_button {
@@ -107,8 +167,9 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1em;
+    font-size: 1.5em;
     border-radius: 1em;
+    position: relative;
 
 }
 
@@ -130,4 +191,10 @@ h1 {
     width: auto;
     height: auto; 
 }
+
+.personalizationIcon, .privacyIcon, .feedbackIcon {
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    padding-top: 3em;
 
