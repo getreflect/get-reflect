@@ -20,9 +20,12 @@
 body {
     font-family: Circular Light;
     color: var(--white);
-    background-image:
-    linear-gradient(var(--darkblue), var(--white));
     margin: 0;
+}
+
+.background-image {
+    width: 100%; 
+    height: 50%; 
 }
 
 h1 {
@@ -43,10 +46,11 @@ p {
 
 /* Navigation Bar  */
 .header {
-    padding-top: .5em;
+    padding-top: 1em;
 }
 
 .header ul {
+    padding-top: .75em;
     float: right;
     list-style: none;
 }
@@ -99,7 +103,7 @@ h1 {
 }
 
 .currentFeatures {
-    padding-bottom: 5em;
+    padding-bottom: 2em;
 }
 
 .currentFeatures p {
@@ -109,11 +113,10 @@ h1 {
 
 
 .futureFeatures {
-    padding-top: 7em;
+    padding-top: 2em;
 }
-.install {
-    padding-top: 4em;
-}
+/* .install {
+} */
 
 /* Footer */
 .footerImage {
@@ -131,13 +134,23 @@ h1 {
     transform: translate(-50%, 50%);
 }
 
+.socialMedia {
+    justify-content: center;
+}
+
+.SMImage {
+    width: 5em; 
+    height: 5em;
+    text-align: center; 
+}
+
 .dot {
     height: 75px;
     width: 75px;
     background-color: var(--white);
     border-radius: 50%;
     display: inline-block;
-
+    text-align: center; 
   }
 
 
@@ -180,14 +193,15 @@ h1 {
 
 /* Images Style  */
 .logo {
-    max-width: 85px;
+    padding-top: .8em; 
+    max-width: 60px;
     width: auto;
     height: auto;
 }
 
 .mockup {
     float: right; 
-    max-width: 700px;
+    max-width: 555px;
     width: auto;
     height: auto; 
 }
@@ -197,4 +211,5 @@ h1 {
     width: auto;
     height: auto;
     padding-top: 3em;
+}
 
