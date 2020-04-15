@@ -1,0 +1,54 @@
+@media all and (max-width: 450px) {
+    .lt-content-column {
+        padding: 0 10vw 30px 10vw !important; 
+    }
+
+    .lt-flex-row {
+        flex-direction: column !important;
+    }
+
+    .lt-flex-66 {
+        flex: none; 
+    }
+
+    .mockup {
+        height: auto !important;
+        width: auto !important;
+        max-width: 20em !important;
+        flex: none !important; 
+    }
+
+    .splashText {
+        text-align: center; 
+    }
+
+    h1 {
+        padding-top: 0em !important; 
+    }
+
+    .introHeader {
+        margin-top: 1em !important;
+    }
+
+    .features { 
+        margin-top: 3em !important; 
+    }
+
+    .socialMedia {
+        flex-direction: row !important; 
+    }
+
+    .personalizationIcon, .privacyIcon, .feedbackIcon {
+        padding-top: 1em !important; 
+    }
+
+    .footerText {
+        margin-bottom: 4em !important; 
+    }
+
+    .SMImage {
+        padding-left: none !important; 
+    }
+
+}
+
