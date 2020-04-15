@@ -1,3 +1,5 @@
+@import url("style-mobile.css");
+
 /* Fonts and Colours */
 @font-face {
     font-family: Circular; 
@@ -121,7 +123,7 @@ h1 {
 }
 
 .currentFeatures p {
-    color: var(--white);
+    color: var(--lightblue);
 }
     
 
@@ -157,7 +159,14 @@ h1 {
     width: 5em; 
     height: 5em;
     text-align: center;
-    padding-left: 1.5em; 
+}
+
+.SM-IG {
+    width: 5em; 
+    height: 5em;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .dot {
