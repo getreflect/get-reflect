@@ -15,6 +15,13 @@
     --darkblue: #576CA8;
     --lightgrey: #DAE0E5;
 }
+html { 
+    background: url(images/background.png) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 /* Body */
 body {
@@ -75,9 +82,16 @@ a:hover {
 
 /* Splash Page */
 h1 { 
-    padding-top: 3em;
+    padding-top: 2em;
 }
 
+.splash {
+    width: 100%;
+}
+
+.splashText {
+    flex: 0 0 35%;
+}
 
 /* Intro */
 .intro h1 {
@@ -119,19 +133,20 @@ h1 {
 } */
 
 /* Footer */
-.footerImage {
-    width: 100%;
-    
-  }
-.footer {
+/* .footer {
     position: relative;
-}
+} */
 
-.footerText {
+/* .footerText {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
+} */
+
+.footer {
+    padding-top: 15em;
+    padding-bottom: 5em;
 }
 
 .socialMedia {
@@ -141,7 +156,8 @@ h1 {
 .SMImage {
     width: 5em; 
     height: 5em;
-    text-align: center; 
+    text-align: center;
+    padding-left: 1.5em; 
 }
 
 .dot {
@@ -201,9 +217,10 @@ h1 {
 
 .mockup {
     float: right; 
-    max-width: 555px;
+    max-width: 550px;
     width: auto;
-    height: auto; 
+    height: auto;
+    flex: 0 0 65%; 
 }
 
 .personalizationIcon, .privacyIcon, .feedbackIcon {
