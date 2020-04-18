@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="images/shortcut-icon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -29,7 +30,7 @@
         <div class="splashText lt-flex-33"> 
             <h1>reflect.</h1>
             <p>a website blocker for <br> the productive.</p> 
-            <a href="#" class="white_button">i'm ready</a>
+            <div id="ready_button" class="white_button">i'm ready</div>
         </div>
 
         <img src="images/mockup.png" class="mockup lt-flex-66" alt="mockup">
@@ -37,7 +38,9 @@
     <!-- Product Intro -->
     <div class="intro">
         <div class = "introHeader lt-centre">
-            <h1> what we're about</h1>
+            <a id="linkIntro">
+                <h1> what we're about</h1>
+            </a>
         </div>
         <div class="introDescription">
             <p>
@@ -76,7 +79,7 @@
         <div class="futureFeatures lt-flex-row">
             <div class="suggestions lt-flex-50">
                 <h2>any feedback?</h3>
-                <p>if you’d like to suggest anything,<br>please head over to: [link]!<br>thanks! :)</p>
+                <p>if you’d like to suggest anything,<br>please reach out at getreflectapp@gmail.com :)</p>
             </div>
             <div class="more lt-flex-50">
                 <h2>more to come.</h2>
@@ -90,9 +93,15 @@
     <div class="footer lt-centre">
         <div class = "footerText">
             <div class="socialMedia lt-flex-row">
-                <img src="images/reflect-fb.png" class="SMImage" alt="footer">
-                <img src="images/reflect-ig.png" class="SM-IG" alt="footer">
+                <a href="https://www.facebook.com/getreflect/" target="_blank">
+                    <img src="images/reflect-fb.png" class="SMImage" alt="footer">
+                </a>
+                <a href="https://www.instagram.com/getreflect/" target="_blank">
+                    <img src="images/reflect-ig.png" class="SM-IG" alt="footer">
+                </a>
+                <a href="mailto:getreflectapp@gmail.com" target="_top">
                 <img src="images/reflect-email.png" class="SMImage" alt="footer">
+                </a>
             </div>
             <div class="madeBy">
                 <p>made with love by the reflect team. <br> © 2020.</p>
@@ -101,7 +110,8 @@
     </div>
 
     <!--Link to JavaScript File-->
-    <script src="script.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>  
     <noscript>Need to enable JavaScript to view the full site!</noscript>
 </body>
 </html>
