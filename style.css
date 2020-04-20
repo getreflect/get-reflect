@@ -71,6 +71,11 @@ a {
 .splash {
     align-items: center;
     height: 100vh;
+    width: 100%;
+}
+
+.splash * {
+    flex: 0 0 50% !important;
 }
 
 /* Intro */
@@ -89,9 +94,12 @@ a {
 }
 
 .shadow {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.06), 0 10px 10px rgba(0,0,0,0.02);
+    box-shadow: 0 14px 28px rgba(27, 33, 48,0.06), 0 10px 10px rgba(27, 33, 48,0.02);
 }
 
+.lt-hover:hover {
+    box-shadow: 0 14px 28px rgba(27, 33, 48,0.18), 0 10px 10px rgba(27, 33, 48,0.16) !important;
+}
 
 .futureFeatures {
     padding-top: 2em;
@@ -137,8 +145,7 @@ a {
 
 .mockup {
     margin-top: 3em;
-    float: right; 
-    max-width: 550px;
+    max-width: 600px;
     width: auto;
     height: auto;
 }
@@ -151,11 +158,14 @@ a {
     border: 1px solid var(--darkblue);
     text-align: center;
     flex-grow: 0;
+    flex-basis: 100%;
+    min-width: 25%;
 }
 
 .featureDiv h3 {
     margin-bottom: 0em;
     color: var(--darkblue);
+    word-wrap: break-word;
 }
 
 .featureDiv p {
