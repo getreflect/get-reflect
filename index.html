@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="images/shortcut-icon.ico">
+    <link rel="shortcut icon" href="images/icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,98 +16,104 @@
 
 <body>
     <div class = "lt-content-column">
-    <!-- Header -->
-    <div class="header">
-        <!-- Logo -->
-            <a href="#">
-                <img src="images/logo.png" class="logo lt-flex-33" alt="logo">
-            </a>
-        <!-- Navigation Bar -->
-    </div>
-
     <!-- Splash Page -->
     <div class="splash lt-flex-row">
-        <div class="splashText lt-flex-33"> 
+        <div class="splashText lt-flex-50">
+            <img src="images/logo-white-hollow.png" class="logo" alt="logo">
             <h1>reflect.</h1>
-            <p>a website blocker for <br> the productive.</p> 
-            <div id="ready_button" class="white_button">i'm ready</div>
+            <p>a website blocker for <br> the productive.</p>
+            <br><br>
+            <a id="ready_button" class="lt-hover white_button shadow">i'm ready</a>
         </div>
 
-        <img src="images/mockup.png" class="mockup lt-flex-66" alt="mockup">
+        <div class="lt-flex-50">
+            <img src="images/mockup.png" class="mockup" alt="mockup">
+        </div>
     </div>
+
     <!-- Product Intro -->
     <div class="intro">
-        <div class = "introHeader lt-centre">
-            <a id="linkIntro">
-                <h1> what we're about</h1>
-            </a>
-        </div>
-        <div class="introDescription">
-            <p>
-                reflect is a digitally mindful chrome extension that 
-                encourages users to reflect on their relationship with technology. 
-                <br><br>
-                when you attempt to visit distracting websites, reflect will ask you 
-                what your intention in doing so is. if you have a valid reason, 
-                you are allowed to enter the website; if not, you are encouraged to reflect further. 
-            </p>
+        <h2>what we're about.</h2>
+        <p>
+            reflect is a digitally mindful chrome extension that 
+            encourages users to reflect on their relationship with technology. 
+            <br><br>
+            when you attempt to visit distracting websites, reflect will ask you what your intention in doing so is. if you have a valid reason, you are given a set amount of time to get your work done on the website. if not, you are encouraged to be more specific in your answer or to reflect further.
+        </p>
+        <br>
+        <h2>our philosophy.</h2>
+        <p>
+            reflect takes a different approach from other website blockers. instead of going cold turkey, we choose to be more mindful by supporting users in accessing websites when they need to, not blocking them off entirely. our mission is to help people work distraction-free with more intention and purpose.
+        </p>
+    </div>
+    </div>
+
+    <!-- transition -->
+    <img src="images/transition.png" class="transition">
+
+    <div class="lt-content-column white-bg">
+    <div class="features">
+        <h2>our features.</h2>
+        <div class="currentFeatures lt-flex-row">
+            <div class="featureDiv lt-flex-25 shadow lt-hover">
+                <img src="images/personalization.png" alt="logo">
+                <h3>personalization.</h3>
+                <p>you select websites you’d like to block.</p>
+            </div>
+            <div class="featureDiv lt-flex-25 shadow lt-hover">
+                <img src="images/privacy.png" alt="logo">
+                <h3>privacy.</h3>
+                <p>everything stays on your computer.</p>
+            </div>
+            <div class="featureDiv lt-flex-25 shadow lt-hover">
+                <img src="images/source.png" alt="logo">
+                <h3>open source.</h3>
+                <p>always free and open-source. <a href="https://github.com/jackyzha0/reflect-chrome" target="_blank">[source]</a></p>
+            </div>
         </div>
     </div>
-    <!-- Features -->
-    <div class="features lt-centre">
-        <h1>our features</h1>
-        <div class="currentFeatures lt-flex-row">
-            <div class="personalization lt-flex-33">
-                <img src="images/personalizeIcon.png" class="personalizationIcon" alt="personalizationIcon">
-                <h2>personalization.</h2>
-                <p>you select websites<br>you’d like to block.</p>
-            </div>
-            <div class="privacy lt-flex-33">
-                <img src="images/privacyIcon.png" class="privacyIcon" alt="privacyIcon">
-                <h2>privacy.</h2>
-                <p>everything stays on<br>your computer.</p>
-            </div>
-            <div class="feedback lt-flex-33">
-                <img src="images/feedbackIcon.png" class="feedbackIcon" alt="feedbackIcon">
-                <h2>feedback.</h2>
-                <p>we’ll listen and work<br>to improve reflect.</p>
-            </div>
+    <div id="install" class="lt-centre">
+        <h2>interested?</h2>
+        <p>we're still awaiting approval from the chrome store.<br>in the meantime, sign up to get notified when it comes out.</p>
+        <a href="https://bit.ly/get-reflect" target="_blank" class="blue_button shadow lt-hover">keep me notified</a>
+    </div> 
+    <div class="releases">
+        <h2>latest release.</h2>
+        <div class="release shadow">
+            <div class="versionNumber">v1.0.0</div>
+            <h3>what's changed.</h3>
+            <ul>
+                <li>styled options page</li>
+                <li>added option to customize amount of time to block for</li>
+                <li>fixed bug where pages would still be usable after whitelist expires</li>
+                <li>added some subtle drop shadows in places</li>
+            </ul>
+            <p>commit: <a href="https://github.com/jackyzha0/reflect-chrome/releases/tag/v1.0.0" target="_blank">4d6dc21</a></p>
         </div>
-        <div class="install lt-centre">
-            <a href="#" class="blue_button">releasing on may 1st!</a>
-        </div> 
-        <div class="futureFeatures">
-            <div class="suggestions">
-                <h2>any feedback?</h3>
-                <p>if you’d like to suggest anything,<br>please reach out at getreflectapp@gmail.com :)</p>
-            </div>
+    </div>
+    <div class="futureFeatures">
+        <div class="suggestions">
+            <h2>help improve reflect.</h3>
+            <p>we're always looking for more ways to improve reflect. if you’d like to suggest anything, please reach out at <a href="mailto:hello@getreflect.app" target="_top">hello@getreflect.app</a></p>
+        </div>
+    </div>
+    <div class="madeBy lt-centre">
+        <div class="lt-flex-row socials">
+            <a href="https://www.facebook.com/getreflect" target="_blank"><img src="images/fb.png" alt="our facebook"></a>
+            <a href="https://www.instagram.com/getreflect/" target="_blank"><img src="images/ig.png" alt="our instagram"></a>
+        </div>
+        <p>© 2020. <br> made with love by the reflect team.</p>
+        <div class="lt-flex-row profileImages">
+            <a href="https://jzhao.xyz/" target="_blank"><img src="images/people/jacky.jpg" alt="jacky zhao"></a>
+            <a href="https://www.linkedin.com/in/justina-chua/" target="_blank"><img src="images/people/justina.png" alt="justina chua"></a>
+            <a href="https://www.linkedin.com/in/jennifer-tsai-23356718a/" target="_blank"><img src="images/people/jenn.jpg" alt="jennifer tsai"></a>
+            <a href="https://www.linkedin.com/in/jennifer-tsai-23356718a/" target="_blank"><img src="images/people/anson.jpg" alt="anson yu"></a>
         </div>
     </div>
 </div>
 
-    <!-- Footer -->
-    <div class="footer lt-centre">
-        <div class = "footerText">
-            <div class="socialMedia lt-flex-row">
-                <a href="https://www.facebook.com/getreflect/" target="_blank">
-                    <img src="images/reflect-fb.png" class="SMImage" alt="footer">
-                </a>
-                <a href="https://www.instagram.com/getreflect/" target="_blank">
-                    <img src="images/reflect-ig.png" class="SM-IG" alt="footer">
-                </a>
-                <a href="mailto:getreflectapp@gmail.com" target="_top">
-                <img src="images/reflect-email.png" class="SMImage" alt="footer">
-                </a>
-            </div>
-            <div class="madeBy">
-                <p>made with love by the reflect team. <br> © 2020.</p>
-            </div>
-        </div>
-    </div>
-
-    <!--Link to JavaScript File-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./script.js"></script>  
-    <noscript>Need to enable JavaScript to view the full site!</noscript>
+<!--Link to JavaScript File-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./script.js"></script>  
 </body>
 </html>

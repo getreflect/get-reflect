@@ -1,10 +1,14 @@
 @media all and (max-width: 450px) {
     .lt-content-column {
-        padding: 0 10vw 30px 10vw !important; 
+        padding: 0 5vw 30px 5vw !important; 
     }
 
-    .lt-flex-row {
+    .currentFeatures, .splash {
         flex-direction: column !important;
+    }
+
+    .transition {
+        margin-bottom: -3.5em !important;
     }
 
     .lt-flex-66 {
@@ -22,6 +26,10 @@
         text-align: center; 
     }
 
+    .splash {
+        padding-top: 4em;
+    }
+
     h1 {
         padding-top: 0em !important; 
     }
@@ -32,6 +40,10 @@
 
     .features { 
         margin-top: 3em !important; 
+    }
+
+    .featureDiv {
+        margin: 1em 0em !important;
     }
 
     .socialMedia {
