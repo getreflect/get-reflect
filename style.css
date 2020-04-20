@@ -74,10 +74,6 @@ a {
     width: 100%;
 }
 
-.splash * {
-    flex: 0 0 50% !important;
-}
-
 /* Intro */
 .intro {
     padding-top: 2em;
@@ -157,8 +153,6 @@ a {
     border-radius: 5px;
     border: 1px solid var(--darkblue);
     text-align: center;
-    flex-grow: 0;
-    flex-basis: 100%;
     min-width: 25%;
 }
 
