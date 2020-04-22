@@ -18,20 +18,31 @@
     --lightgrey: #DAE0E5;
 }
 
-html {
-    background-image: linear-gradient(var(--darkblue), var(--lightgrey));
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
 /* Body */
 body {
     font-family: Circular Light;
     color: var(--white);
     margin: 0;
     overflow-x:hidden;
+
+    background-image: linear-gradient(var(--darkblue), var(--lightgrey));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.white {
+    background-image: var(--white) !important;
+    color: var(--darkblue);
+}
+
+.wide-content {
+    padding: 3em 25vw 3em 25vw;
+}
+
+.wide-content > .release {
+    width: 100% !important;
 }
 
 .background-image {
@@ -129,6 +140,17 @@ a {
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
+    border-radius: 5px;
+}
+
+.secondary_button {
+    border: 1px solid var(--darkblue);
+    color: var(--darkblue);
+    padding: .5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
     border-radius: 5px;
 }
 
