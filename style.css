@@ -142,6 +142,17 @@ a {
     border-radius: 5px;
 }
 
+.secondary_button {
+    border: 1px solid var(--darkblue);
+    color: var(--darkblue);
+    padding: .5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
 /* Images Style  */
 .logo {
     max-width: 60px;
