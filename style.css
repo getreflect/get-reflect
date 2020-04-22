@@ -18,20 +18,23 @@
     --lightgrey: #DAE0E5;
 }
 
-html {
-    background-image: linear-gradient(var(--darkblue), var(--lightgrey));
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
 /* Body */
 body {
     font-family: Circular Light;
     color: var(--white);
     margin: 0;
     overflow-x:hidden;
+
+    background-image: linear-gradient(var(--darkblue), var(--lightgrey));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.white {
+    background-image: var(--white) !important;
+    color: var(--darkblue);
 }
 
 .background-image {
