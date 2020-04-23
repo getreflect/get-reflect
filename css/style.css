@@ -36,15 +36,24 @@ body {
     background: linear-gradient(147deg, #8B9AC0 0%, rgba(228, 232, 241, 0.228651) 11.46%, rgba(198, 205, 224, 0.494792) 31.25%, rgba(228, 232, 241, 0.228651) 68.23%, rgba(255, 255, 255, 0) 100%), #576CA8;
 }
 
+#video {
+    z-index: 999;
+    position: fixed;
+    left: 55vw;
+    top: 50%;
+    border-radius: 5px;
+    transform: translateY(-50%);
+}
+
 .onboarding-mockup {
     position: fixed;
-    right: 10vw;
+    left: 48vw;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .mockup_bg {
-    max-width: 750px;
+    max-width: 700px;
     width: auto;
     height: auto;
 }
