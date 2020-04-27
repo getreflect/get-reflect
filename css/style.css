@@ -72,6 +72,10 @@ img {
 }
 
 /* Body */
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: Circular Light;
     color: var(--white);
@@ -303,6 +307,7 @@ a {
     margin: 0 0.5em;
     max-width: 35px;
     border-radius: 50%;
+    margin-bottom: 1em;
 }
 
 .socials {
