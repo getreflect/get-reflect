@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>reflect.</title>
+    <title>reflect. &mdash; a website blocker for the productive.</title>
 
     <!-- Import Libraries -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jackyzha0/lite.css@latest/src/lite.min.css"/>
     
     <!--Link to CSS File-->
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148413215-2"></script>
@@ -83,10 +83,19 @@
             </div>
         </div>
     </div>
-    <div id="install" class="lt-centre">
-        <h2>interested?</h2>
-        <p>we're still awaiting approval from the chrome store.<br>in the meantime, sign up to get notified when it comes out.</p>
-        <a href="https://bit.ly/get-reflect" target="_blank" class="blue_button shadow lt-hover">keep me notified</a>
+    <div class="lt-centre">
+        <div id="install">
+            <h2>install.</h2>
+            <p>ready to reclaim your productivity? join us in our mission to help people work distraction-free with more intention and purpose.</p>
+            <a href="https://chrome.google.com/webstore/detail/reflect/bicebchdpeichdlmoaflplakefkjkade" target="_blank" class="blue_button shadow lt-hover download">
+                <img src="images/chrome.png" class="download-icon">
+                install for Chrome
+            </a>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/reflect-app/" target="_blank" class="blue_button shadow lt-hover download">
+                <img src="images/firefox.png" class="download-icon">
+                install for Firefox
+            </a>
+        </div>
     </div> 
     <div class="releases">
         <h2>latest release.</h2>
@@ -102,10 +111,33 @@
             <a class="secondary_button shadow lt-hover" href="latest.html">see all releases.</a>
         </div>
     </div>
+    <div class="faq">
+        <h2>faq.</h2>
+        <div class="faq-accordion shadow">
+            <button class="accordion">do you store any user data?</button>
+            <div class="faq-panel">
+                <p>no we don't. all data (e.g. blocked sites, settings, browsing history) remains on your local browser or is synced to your Chrome or Firefox account. it is impossible for us to access that data. we do, however, collect internal analytics data such as how many people visit the site but none of it is personally identifiable information.</p>
+            </div>
+        </div>
+
+        <div class="faq-accordion shadow">
+            <button class="accordion">what does the extension consider to be 'productive'?</button>
+            <div class="faq-panel">
+                <p>to help figure out what to count as 'productive' or not, we trained a machine learning model on survey data that we collected a few months back. you can find the details on our <a href="https://github.com/jackyzha0/reflect-nlp/tree/master/nlp" target="_blank">intent classification repository</a>. as a result, there are no 'magic words' that let you in every time. what we have noticed is that the algorithm prefers longer and more specific answers oriented around some kind of work or just taking a break.</p>
+            </div>
+        </div>
+
+        <div class="faq-accordion shadow">
+            <button class="accordion">i want to contribute! how can i help?</button>
+            <div class="faq-panel">
+                <p>as reflect is an open-source project, anyone can help to contribute! we keep the source code in three separate repositories: one for the <a href="https://github.com/jackyzha0/reflect-nlp" target="_blank">intent classifier</a>, <a href="https://github.com/jackyzha0/reflect-chrome" target="_blank">chrome extension</a>, and <a href="https://github.com/jackyzha0/get-reflect" target="_blank">this website</a>. we will be adding more detailed contribution guides as time goes on, but feel free to make a pull request on any of them and we will review them.</p>
+            </div>
+        </div>
+    </div>
     <div class="futureFeatures">
         <div class="suggestions">
             <h2>help improve reflect.</h3>
-            <p>we're always looking for more ways to improve reflect. if you’d like to suggest anything, please reach out at <a href="mailto:hello@getreflect.app" target="_top">hello@getreflect.app</a>.</p>
+            <p>did an intent not work as you expected it to? our algorithm isn't perfect! if you'd like to help improve it, you can submit the example <a href="https://forms.gle/ctypb6FmDT9RQqjv6" target="_blank">here</a> and tell us what you expected to happen. we're always looking for more ways to improve reflect. if you’d like to suggest anything, please reach out at <a href="mailto:hello@getreflect.app" target="_top">hello@getreflect.app</a>.</p>
         </div>
     </div>
     <div class="madeBy lt-centre">
@@ -125,6 +157,6 @@
 
 <!--Link to JavaScript File-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="./script.js"></script>  
+<script src="js/script.js"></script>  
 </body>
 </html>
