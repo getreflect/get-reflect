@@ -15,6 +15,10 @@
         flex: none; 
     }
 
+    .install_section {
+        display: none;
+    }
+
     .mockup {
         height: auto !important;
         width: auto !important;
