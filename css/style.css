@@ -135,6 +135,7 @@ body {
 
 .wide-content > .release {
     width: 100% !important;
+    margin-bottom: 1em;
 }
 
 .background-image {
