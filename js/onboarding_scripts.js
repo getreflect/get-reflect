@@ -1,16 +1,16 @@
-$("#page1button").click(function() {
+$("#page1button").click(() => {
     $('html,body').animate({
       scrollTop: $("#page2").offset().top - $(window).height() / 3
   	},duration = 1000);
 });
 
-$("#page2button").click(function() {
+$("#page2button").click(() => {
     $('html,body').animate({
       scrollTop: $("#page3").offset().top - $(window).height() / 3
   	},duration = 1000);
 });
 
-$("#page3button").click(function() {
+$("#page3button").click(() => {
     $('html,body').animate({
       scrollTop: $("#page4").offset().top - $(window).height() / 3
   	},duration = 1000);
