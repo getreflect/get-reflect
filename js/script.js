@@ -1,4 +1,4 @@
-document.getElementById("#ready_button").addEventListener("click", () => {
+document.getElementById("ready_button").addEventListener("click", () => {
 	$('html,body').animate({
 		scrollTop: $("#install").offset().top
 	}, duration = 1000);

@@ -71,11 +71,6 @@ img {
     display: inline-block;
 }
 
-/* Body */
-a {
-    text-decoration: none;
-}
-
 body {
     font-family: Circular Light;
     color: var(--white);
