@@ -19,7 +19,7 @@ $("#page3button").click(() => {
 $(() => {
     $(window)
     .on('scroll', vidProgress)
-    .load(vidProgress);
+    .on('load', vidProgress)
     
     function vidProgress() {
         // Get video properties
