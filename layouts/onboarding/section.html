@@ -1,44 +1,42 @@
 {{ define "main" }}
-<body>
-  <div class="lt-content-column onboarding-main lt-flex-row">
-    <div class="lt-flex-33 text-col">
-      <div id="page1" class="text-section">
-        <h1>reflect.</h1>
-        <h2>welcome home!</h2>
-        <p>to use reflect, type your reason for visiting the website in the text box. the extension will return a response after you press enter”</p>
-        <a id="page1button" class="lt-hover white_button shadow">got it!</a>
-      </div>
-      <div id="page2" class="text-section">
-        <h2>on and off.</h2>
-        <p>to turn the extension off for longer breaks, press the icon in the upper right of your chrome menu to open the toggle menu.</p>
-        <a id="page2button" class="lt-hover white_button shadow">next.</a>
-      </div>
-      <div id="page3" class="text-section">
-        <h2>options.</h2>
-        <p>on this page, you can customize your reflect experience! using the settings, you can add distracting websites, change how long you’re allowed into those website for, view your latest intents and more.</p>
-        <a id="page3button" class="lt-hover white_button shadow">next.</a>
-      </div>
-      <div id="page4" class="text-section">
-        <h2>that's all!</h2>
-        <p>if you’d like to suggest anything, please reach out at <a class="email" href="mailto:hello@getreflect.app" target="_top">hello@getreflect.app</a>.</p>
-        <br>
-        <p>© 2020. <br> made with love by the reflect team.</p>
-      </div>
+<div class="lt-content-column onboarding-main lt-flex-row">
+  <div class="lt-flex-33 text-col">
+    <div id="page1" class="text-section">
+      <h1>reflect.</h1>
+      <h2>welcome home!</h2>
+      <p>to use reflect, type your reason for visiting the website in the text box. the extension will return a response after you press enter”</p>
+      <a id="page1button" class="lt-hover white_button shadow nextPage">got it!</a>
     </div>
-    <div class="lt-flex-66">
-      <video class="shadow" id="video" width="480" height="300" preload>
-        <source src="/images/onboarding.mp4" type="video/mp4">
-        i feel like you're just trying to break my website at this point :((
-      </video>
-      <img src="/images/mockup_bg.png" class="mockup_bg onboarding-mockup" alt="mockup">
+    <div id="page2" class="text-section">
+      <h2>on and off.</h2>
+      <p>to turn the extension off for longer breaks, press the icon in the upper right of your chrome menu to open the toggle menu.</p>
+      <a id="page2button" class="lt-hover white_button shadow nextPage">next.</a>
+    </div>
+    <div id="page3" class="text-section">
+      <h2>options.</h2>
+      <p>on this page, you can customize your reflect experience! using the settings, you can add distracting websites, change how long you’re allowed into those website for, view your latest intents and more.</p>
+      <a id="page3button" class="lt-hover white_button shadow nextPage">next.</a>
+    </div>
+    <div id="page4" class="text-section">
+      <h2>that's all!</h2>
+      <p>if you’d like to suggest anything, please reach out at <a class="email" href="mailto:hello@getreflect.app" target="_top">hello@getreflect.app</a>.</p>
+      <br>
+      <p>© 2020. <br> made with love by the reflect team.</p>
     </div>
   </div>
+  <div class="lt-flex-66">
+    <video class="shadow" id="video" width="480" height="300" preload>
+      <source src="/images/onboarding.mp4" type="video/mp4">
+      i feel like you're just trying to break my website at this point :((
+    </video>
+    <img src="/images/mockup_bg.png" class="mockup_bg onboarding-mockup" alt="mockup">
+  </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 {{- with resources.Get "/js/onboarding_scripts.js" | minify -}}
 <script>
-  {{.Content | safeJS}}
+{{.Content | safeJS}}
 </script>
 {{- end -}}
-</body>
 {{ end }}

@@ -1,20 +1,13 @@
-$("#page1button").click(() => {
-    $('html,body').animate({
-      scrollTop: $("#page2").offset().top - $(window).height() / 3
-  	},duration = 1000);
-});
+const numPages = $('.nextPage').length
 
-$("#page2button").click(() => {
-    $('html,body').animate({
-      scrollTop: $("#page3").offset().top - $(window).height() / 3
-  	},duration = 1000);
-});
-
-$("#page3button").click(() => {
-    $('html,body').animate({
-      scrollTop: $("#page4").offset().top - $(window).height() / 3
-  	},duration = 1000);
-});
+for (var i = 1; i < numPages + 1; i++) {
+    const page = `#page${i + 1}`
+    $(`#page${i}button`).last().click(() => {
+        $('html,body').animate({
+            scrollTop: $(page).last().offset().top - $(window).height() / 3
+        }, duration = 1000);
+    });
+}
 
 $(() => {
     $(window)

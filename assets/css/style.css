@@ -253,7 +253,6 @@ a {
 
 .featureDiv {
     padding: 1em 1.5em;
-    margin: 0 1.5em;
     border-radius: 5px;
     text-align: center;
     min-width: 25%;
@@ -262,7 +261,6 @@ a {
 .featureDiv h3 {
     margin-bottom: 0em;
     color: var(--darkblue);
-    word-wrap: break-word;
 }
 
 .featureDiv p {
@@ -314,7 +312,7 @@ a {
 
 #install {
     margin: 8em auto;
-    width: 30vw;
+    width: 40vw;
 }
 
 .release {
