@@ -1,0 +1,5 @@
+<h2> previous releases.</h2>
+{{$length := len $.Site.Data.releases}}
+{{- range last (sub $length 1) $.Site.Data.releases -}}
+{{ partial "releases/single.html" .}}
+{{- end -}}

@@ -2,84 +2,8 @@
 <body class="white">
     <div class="wide-content">
         {{ partial "title.html" .}}
-        <h2>latest release.</h2>
-        <div class="release shadow">
-            <div class="versionNumber">v1.2.1</div>
-            <h3>what's changed.</h3>
-            <ul>
-                <li>changed block screen to have dynamically generated blobs! they can be disabled in options if needed
-                </li>
-                <li>remove support for firefox. <a
-                        href="https://github.com/getreflect/reflect-chrome/issues/76">details</a></li>
-                <li>add whitelist for common link wrappers like <code>l.facebook.com</code></li>
-                <li>fixed bug where blocked pages that were open before reflect is turned off, dont get refreshed when
-                    reflect is turned
-                    back on</li>
-                <li>manifest defined css injection rather than head forced</li>
-                <li>update dependencies with vulnerabilities</li>
-            </ul>
-            <p>commit: <a href="https://github.com/jackyzha0/reflect-chrome/releases/tag/v1.2.1"
-                    target="_blank">aa053fa</a></p>
-        </div>
-        <h2> previous releases.</h2>
-        <div class="release shadow">
-            <div class="versionNumber">v1.2.0</div>
-            <h3>what's changed.</h3>
-            <ul>
-                <li>qol: check whether current page needs to be blocked when extension is toggled on/off</li>
-                <li>add current page display to popup</li>
-                <li>add ability to block page from popup</li>
-                <li>add sorting to analytics table</li>
-            </ul>
-            <p>commit: <a href="https://github.com/jackyzha0/reflect-chrome/releases/tag/v1.2.0"
-                    target="_blank">70310a2</a></p>
-        </div>
-        <div class="release shadow">
-            <div class="versionNumber">v1.1.1</div>
-            <h3>what's changed.</h3>
-            <ul>
-                <li>fixed bug where sometimes intents were not being logged</li>
-                <li>fixed bug where extension would toggle off after successful intent</li>
-            </ul>
-            <p>commit: <a href="https://github.com/jackyzha0/reflect-chrome/releases/tag/v1.1.1"
-                    target="_blank">b05203f</a></p>
-        </div>
-        <div class="release shadow">
-            <div class="versionNumber">v1.1.0</div>
-            <h3>what's changed.</h3>
-            <ul>
-                <li>improved nlp model</li>
-                <li>added analytics panel in options page that shows previous input intents</li>
-                <li>changed on/off toggle out for a popup panel</li>
-                <li>squashed bugs</li>
-            </ul>
-            <p>commit: <a href="https://github.com/jackyzha0/reflect-chrome/releases/tag/v1.1.0"
-                    target="_blank">54aa72d</a></p>
-        </div>
-        <div class="release shadow">
-            <div class="versionNumber">v1.0.1</div>
-            <h3>what's changed.</h3>
-            <ul>
-                <li>added redirect to onboarding screen on extension install</li>
-                <li>added redirect to changelog on extension update (this page!)</li>
-                <li>added redirect to uninstall survey on extension uninstall</li>
-                <li>added status badge displaying how long you have left before page is re-blocked</li>
-            </ul>
-            <p>commit: <a href="https://github.com/jackyzha0/reflect-chrome/releases/tag/v1.0.1"
-                    target="_blank">5a1b59d</a></p>
-        </div>
-        <div class="release shadow">
-            <div class="versionNumber">v1.0.0</div>
-            <h3>what's changed.</h3>
-            <ul>
-                <li>styled options page</li>
-                <li>added option to customize amount of time to block for</li>
-                <li>fixed bug where pages would still be usable after whitelist expires</li>
-                <li>added some subtle drop shadows in places</li>
-            </ul>
-            <p>commit: <a href="https://github.com/jackyzha0/reflect-chrome/releases/tag/v1.0.0"
-                    target="_blank">4d6dc21</a></p>
-        </div>
+        {{ partial "releases/latest.html" .}}
+        {{ partial "releases/list.html" .}}
     </div>
 
     {{partial "footer.html" . }}
