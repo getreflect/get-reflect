@@ -321,7 +321,6 @@ a {
     border: 1px solid var(--darkblue);
     border-radius: 5px;
     padding: 1em 1em;
-    width: 75%;
 }
 
 .release p {

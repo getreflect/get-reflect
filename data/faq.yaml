@@ -1,0 +1,8 @@
+- q: do you store any user data?
+  a: no we don't. all data (e.g. blocked sites, settings, browsing history) remains on your local browser or is synced to your Chrome or Firefox account. it is impossible for us to access that data. we do, however, collect internal analytics data such as how many people visit the site but none of it is personally identifiable information.
+
+- q: what does the extension consider to be 'productive'?
+  a: to help figure out what to count as 'productive' or not, we trained a machine learning model on survey data that we collected a few months back. you can find the details on our <a href="https://github.com/getreflect/reflect-nlp/tree/master/nlp" rel="noreferrer">intent classification repository</a>. as a result, there are no 'magic words' that let you in every time. what we have noticed is that the algorithm prefers longer and more specific answers oriented around some kind of work or just taking a break.
+
+- q: i want to contribute! how can i help?
+  a: as reflect is an open-source project, anyone can help to contribute! we keep the source code in three separate repositories; one for the <a href="https://github.com/getreflect/reflect-nlp" rel="noreferrer">intent classifier</a>, <a href="https://github.com/getreflect/reflect-chrome" rel="noreferrer">chrome extension</a>, and <a href="https://github.com/getreflect/get-reflect" rel="noreferrer">this website</a>. we will be adding more detailed contribution guides as time goes on, but feel free to make a pull request on any of them and we will review them.
