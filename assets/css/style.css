@@ -1,14 +1,12 @@
-@import url("style-mobile.css");
-
 /* Fonts and Colours */
 @font-face {
     font-family: Circular; 
-    src: url(circular.ttf); 
+    src: url(/circular.ttf); 
 }
 
 @font-face {
     font-family: Circular Light;
-    src: url(circular-light.ttf);
+    src: url(/circular-light.ttf);
 }
 
 :root {
@@ -254,11 +252,9 @@ a {
 }
 
 .featureDiv {
-    background-color: var(--white);
     padding: 1em 1.5em;
     margin: 0 1.5em;
     border-radius: 5px;
-    border: 1px solid var(--darkblue);
     text-align: center;
     min-width: 25%;
 }

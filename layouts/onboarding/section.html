@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="shortcut icon" href="images/icon.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>reflect. &mdash; onboarding</title>
-
-    <!-- Import Libraries -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jackyzha0/lite.css@latest/src/lite.min.css"/>
-    
-    <!--Link to CSS File-->
-    <link rel="stylesheet" href="css/style.css"> 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148413215-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-148413215-2');
-    </script>
-</head>
-
+{{ define "main" }}
 <body>
   <div class="lt-content-column onboarding-main lt-flex-row">
     <div class="lt-flex-33 text-col">
@@ -52,13 +27,18 @@
     </div>
     <div class="lt-flex-66">
       <video class="shadow" id="video" width="480" height="300" preload>
-        <source src="images/onboarding.mp4" type="video/mp4">
+        <source src="/images/onboarding.mp4" type="video/mp4">
         i feel like you're just trying to break my website at this point :((
       </video>
-      <img src="images/mockup_bg.png" class="mockup_bg onboarding-mockup" alt="mockup">
+      <img src="/images/mockup_bg.png" class="mockup_bg onboarding-mockup" alt="mockup">
     </div>
   </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/onboarding_scripts.js"></script>  
+{{- with resources.Get "/js/onboarding_scripts.js" | minify -}}
+<script>
+  {{.Content | safeJS}}
+</script>
+{{- end -}}
 </body>
+{{ end }}
