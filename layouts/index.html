@@ -1,0 +1,107 @@
+{{ define "main" }}
+<div class="lt-content-column">
+    <!-- Splash Page -->
+    <div class="splash lt-flex-row">
+        <div class="splashText lt-flex-50">
+            <img src="images/logo-white-hollow.png" class="logo" alt="logo">
+            <h1>reflect.</h1>
+            <p>a website blocker for <br> the productive.</p>
+            <br><br>
+            <a id="ready_button" class="lt-hover white_button shadow">i'm ready</a>
+        </div>
+
+        <div class="lt-flex-50">
+            <img src="images/mockup.png" class="mockup" alt="mockup">
+        </div>
+    </div>
+
+    <!-- Product Intro -->
+    <div class="intro">
+        <h2>what we're about.</h2>
+        <p>
+            reflect is a digitally mindful chrome and firefox extension that
+            encourages users to reflect on their relationship with technology.
+            <br><br>
+            when you attempt to visit distracting websites, reflect will ask you what your intention in doing so is.
+            if you have a valid reason, you are given a set amount of time to get your work done on the website. if
+            not, you are encouraged to be more specific in your answer or to reflect further.
+        </p>
+        <br>
+        <h2>our philosophy.</h2>
+        <p>
+            reflect takes a different approach from other website blockers. instead of going cold turkey, we choose
+            to be more mindful by supporting users in accessing websites when they need to, not blocking them off
+            entirely. our mission is to help people work distraction-free with more intention and purpose.
+        </p>
+    </div>
+</div>
+
+<!-- transition -->
+<img src="images/transition.png" class="transition" alt="Transition from dark blue background to white">
+
+<div class="lt-content-column white-bg">
+    <div class="features">
+        <h2>our features.</h2>
+        <div class="currentFeatures lt-flex-row">
+            <div class="featureDiv lt-flex-25">
+                <img src="images/personalization.png" alt="logo">
+                <h3>personalized.</h3>
+                <p>you select websites you’d like to block.</p>
+            </div>
+            <div class="featureDiv lt-flex-25">
+                <img src="images/privacy.png" alt="logo">
+                <h3>privacy.</h3>
+                <p>everything stays on your computer.</p>
+            </div>
+            <div class="featureDiv lt-flex-25">
+                <img src="images/source.png" alt="logo">
+                <h3>open-source.</h3>
+                <p>always free and open-source. <a href="https://github.com/getreflect/reflect-chrome"
+                        rel="noreferrer">[source]</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="lt-centre install_section">
+        <div id="install">
+            <h2>install.</h2>
+            <p>ready to reclaim your productivity? join us in our mission to help people work distraction-free with
+                more intention and purpose.</p>
+            <a href="https://chrome.google.com/webstore/detail/reflect/bicebchdpeichdlmoaflplakefkjkade"
+                target="_blank" rel="noreferrer" class="blue_button shadow lt-hover download">
+                <img src="images/chrome.png" class="download-icon" alt="Chrome Logo">
+                install for Chrome
+            </a>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/reflect-app/" target="_blank" rel="noreferrer"
+                class="blue_button shadow lt-hover download">
+                <img src="images/firefox.png" class="download-icon" alt="Firefox Logo">
+                install for Firefox
+            </a>
+        </div>
+    </div>
+    <div class="releases">
+        {{partial "releases/latest.html" .}}
+        <br>
+        <a class="secondary_button shadow lt-hover" href="latest.html">see all releases.</a>
+    </div>
+    <div class="faq">
+        <h2>faq.</h2>
+        {{partial "faq/list.html" .}}
+    </div>
+    <div class="futureFeatures">
+        <div class="suggestions">
+            <h2>help improve reflect.</h3>
+                <p>did an intent not work as you expected it to? our algorithm isn't perfect! if you'd like to help
+                    improve it, you can submit the example <a href="https://forms.gle/ctypb6FmDT9RQqjv6"
+                        target="_blank" rel="noreferrer">on our feedback form</a> and tell us what you expected to
+                    happen. </p>
+                <p>we're always looking for more ways to improve reflect. if you’d like to suggest anything, please
+                    reach out at <a href="mailto:hello@getreflect.app" target="_top"
+                        rel="noreferrer">hello@getreflect.app</a>.</p>
+        </div>
+    </div>
+    {{partial "footer.html" .}}
+</div>
+
+<!--Link to JavaScript File-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{ end }}

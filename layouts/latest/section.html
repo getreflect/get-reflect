@@ -1,0 +1,11 @@
+{{ define "main" }}
+<body class="white">
+    <div class="wide-content">
+        {{ partial "title.html" .}}
+        {{ partial "releases/latest.html" .}}
+        {{ partial "releases/list.html" .}}
+    </div>
+
+    {{partial "footer.html" . }}
+</body>
+{{ end }}

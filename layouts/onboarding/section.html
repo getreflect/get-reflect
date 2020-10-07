@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="lt-content-column onboarding-main lt-flex-row">
+  <div class="lt-flex-33 text-col">
+    {{- range $i, $el := $.Site.Data.onboarding -}}
+    <div id="page{{add $i 1}}" class="text-section">
+      {{ if (eq $i 0) }}
+      <h1>reflect.</h1>
+      {{ end }}
+
+      <h2>{{$el.header}}</h2>
+      <p>{{$el.text | safeHTML}}</p>
+
+      {{ if (eq $i (sub (len $.Site.Data.onboarding) 1))}}
+      <br>© 2020. <br> made with love by the reflect team.
+      {{else}}
+      <a id="page{{add $i 1}}button" class="lt-hover white_button shadow nextPage">got it!</a>
+      {{end}}
+    </div>
+    {{- end -}}
+  </div>
+  <div class="lt-flex-66">
+    <video class="shadow" id="video" width="480" height="300" preload>
+      <source src="/images/onboarding.mp4" type="video/mp4">
+      i feel like you're just trying to break my website at this point :((
+    </video>
+    <img src="/images/mockup_bg.png" class="mockup_bg onboarding-mockup" alt="mockup">
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{- with resources.Get "/js/onboarding_scripts.js" | minify -}}
+<script>
+{{.Content | safeJS}}
+</script>
+{{- end -}}
+{{ end }}

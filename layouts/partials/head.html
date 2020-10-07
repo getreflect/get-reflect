@@ -1,0 +1,38 @@
+<link rel="shortcut icon" href="/images/icon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description"
+    content="reflect is a digitally mindful chrome and firefox extension that encourages users to reflect on their relationship with technology. when you attempt to visit distracting websites, reflect will ask you what your intention in doing so is. if you have a valid reason, you are given a set amount of time to get your work done on the website. if not, you are encouraged to be more specific in your answer or to reflect further.">
+
+<!-- Import Libraries -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jackyzha0/lite.css@latest/src/lite.min.css" />
+
+<!-- CSS injection -->
+{{with resources.Get "/css/style.css" | minify}}
+<style>
+    {{.Content | safeCSS }}
+</style>
+{{end}}
+{{with resources.Get "/css/mobile.css" | minify}}
+<style>
+    {{.Content | safeCSS}}
+</style>
+{{end}}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148413215-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148413215-2');
+</script>
+
+<!-- JS Injection -->
+{{- with resources.Get "/js/script.js" | minify -}}
+<script>
+    {{.Content | safeJS }}
+</script>
+{{- end -}}

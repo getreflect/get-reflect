@@ -1,0 +1,11 @@
+<div class="release shadow">
+    <div class="versionNumber">{{.version}}</div>
+    <h3>what's changed.</h3>
+    <ul>
+        {{- range .changes -}}
+        <li>{{. | safeHTML }}</li>
+        {{ end }}
+    </ul>
+    <p>commit: <a href="https://github.com/getreflect/reflect-chrome/releases/tag/{{.version}}"
+            target="_blank">{{.hash}}</a></p>
+</div>

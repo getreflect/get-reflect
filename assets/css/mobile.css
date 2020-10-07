@@ -1,70 +1,53 @@
 @media all and (max-width: 450px) {
     .lt-content-column {
-        padding: 0 5vw 30px 5vw !important; 
+        padding: 0 5vw 30px 5vw !important;
     }
-
     .currentFeatures, .splash {
         flex-direction: column !important;
     }
-
     .transition {
         margin-bottom: -3.5em !important;
     }
-
     .lt-flex-66 {
-        flex: none; 
+        flex: none;
     }
-
     .install_section {
         display: none;
     }
-
     .mockup {
         height: auto !important;
         width: auto !important;
         max-width: 20em !important;
-        flex: none !important; 
+        flex: none !important;
     }
-
     .splashText {
-        text-align: center; 
+        text-align: center;
     }
-
     .splash {
         padding-top: 4em;
     }
-
     h1 {
-        padding-top: 0em !important; 
+        padding-top: 0em !important;
     }
-
     .introHeader {
         margin-top: 1em !important;
     }
-
-    .features { 
-        margin-top: 3em !important; 
+    .features {
+        margin-top: 3em !important;
     }
-
     .featureDiv {
         margin: 1em 0em !important;
     }
-
     .socialMedia {
-        flex-direction: row !important; 
+        flex-direction: row !important;
     }
-
     .personalizationIcon, .privacyIcon, .feedbackIcon {
-        padding-top: 1em !important; 
+        padding-top: 1em !important;
     }
-
     .footerText {
-        margin-bottom: 4em !important; 
+        margin-bottom: 4em !important;
     }
-
     .SMImage {
-        padding-left: none !important; 
+        padding-left: none !important;
     }
-
 }
-

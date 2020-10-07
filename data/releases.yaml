@@ -1,0 +1,77 @@
+- version: v1.2.2
+  changes:
+  - made background script persistent again (should solve NLP model input delay issues on block page)
+  hash: 9e6bd97
+
+- version: v1.2.1
+  changes:
+  - changed block screen to have dynamically generated blobs! they can be disabled in options if needed
+  - remove support for firefox. <a href="https://github.com/getreflect/reflect-chrome/issues/76">details</a>
+  - add whitelist for common link wrappers like <code>l.facebook.com</code>
+  - fixed bug where blocked pages that were open before reflect is turned off, dont get refreshed when reflect is turned back on
+  - manifest defined css injection rather than head forced
+  - update dependencies with vulnerabilities
+  hash: aa053fa
+
+- version: v1.2.0
+  changes:
+  - "qol: check whether current page needs to be blocked when extension is toggled on/off"
+  - add current page display to popup
+  - add ability to block page from popup
+  - add sorting to analytics table
+  hash: 70310a2
+
+- version: v1.1.1
+  changes:
+  - fixed bug where sometimes intents were not being logged
+  - fixed bug where extension would toggle off after successful intent
+  hash: b05203f
+
+- version: v1.1.0
+  changes:
+  - retrained nlp model on augmented data (general robustness improvements)
+  - added analytics panel in options page that shows previous input intents
+  - changed on/off toggle out for a popup panel
+  hash: 54aa72d
+
+- version: v1.0.1
+  changes:
+  - added redirect to onboarding screen on extension install
+  - added redirect to changelog on extension update (this page!)
+  - added redirect to uninstall survey on extension uninstall
+  - added status badge displaying how long you have left before page is re-blocked
+  hash: 5a1b59d
+
+- version: v1.0.0
+  changes:
+  - styled options page
+  - added option to customize amount of time to block for
+  - fixed bug where pages would still be usable after whitelist expires
+  - added some subtle drop shadows in places
+  hash: 4d6dc21
+
+- version: v0.4a
+  changes:
+  - move everything to tensorflow.js
+  - remove delay from server requests
+  - fully offline (everything stays local!)
+  hash: ceb4fcd
+
+- version: v0.3a
+  changes:
+  - use new prod-ready gke address
+  - added better messaging for errors/timeout
+  hash: a3fb377
+
+- version: v0.2a
+  changes:
+  - added autofocus to input field
+  - removed annoying dropdown menu thing
+  - added visual feedback (textbox shake + 'connecting...' text)
+  - other behind the scenes cool stuff
+  hash: 93240f7
+
+- version: v0.1a
+  changes:
+  - official release!
+  hash: 7593bfc
