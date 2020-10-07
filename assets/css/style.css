@@ -1,12 +1,12 @@
 /* Fonts and Colours */
 @font-face {
     font-family: Circular; 
-    src: url(/circular.ttf); 
+    src: url(../circular.ttf); 
 }
 
 @font-face {
     font-family: Circular Light;
-    src: url(/circular-light.ttf);
+    src: url(../circular-light.ttf);
 }
 
 :root {
