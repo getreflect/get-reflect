@@ -3,18 +3,20 @@
   <div class="lt-flex-33 text-col">
     {{- range $i, $el := $.Site.Data.onboarding -}}
     <div id="page{{add $i 1}}" class="text-section">
-      {{ if (eq $i 0) }}
-      <h1>reflect.</h1>
-      {{ end }}
+      <div id="{{$el.section_id}}">
+        {{ if (eq $i 0) }}
+        <h1>reflect.</h1>
+        {{ end }}
 
-      <h2>{{$el.header}}</h2>
-      <p>{{$el.text | safeHTML}}</p>
+        <h2>{{$el.header}}</h2>
+        <p>{{$el.text | safeHTML}}</p>
 
-      {{ if (eq $i (sub (len $.Site.Data.onboarding) 1))}}
-      <br>© 2020. <br> made with love by the reflect team.
-      {{else}}
-      <a id="page{{add $i 1}}button" class="lt-hover white_button shadow nextPage">got it!</a>
-      {{end}}
+        {{ if (eq $i (sub (len $.Site.Data.onboarding) 1))}}
+        <br>© 2020. <br> made with love by the reflect team.
+        {{else}}
+        <a id="page{{add $i 1}}button" class="lt-hover white_button shadow nextPage">got it!</a>
+        {{end}}
+      </div>
     </div>
     {{- end -}}
   </div>

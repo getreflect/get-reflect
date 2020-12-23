@@ -1,11 +1,15 @@
-- header: welcome home!
+- section_id: intro
+  header: welcome home!
   text: to use reflect, type your reason for visiting the website in the text box. the extension will return a response after you press enter.
 
-- header: on and off.
+- section_id: toggle_extension
+  header: on and off.
   text: to turn the extension off for longer breaks, press the icon in the upper right of your chrome menu to open the toggle menu.
 
-- header: options.
+- section_id: options
+  header: options.
   text: on this page, you can customize your reflect experience! using the settings, you can add distracting websites, change how long you’re allowed into those website for, view your latest intents and more.
 
-- header: that's all!
+- section_id: conclusion
+  header: that's all!
   text: if you’d like to suggest anything, please reach out at <a class="email" href="mailto:hello@getreflect.app" target="_top">hello@getreflect.app</a>.
