@@ -22,7 +22,8 @@ input[type=number] {
     font-family: "circular-lt";
     color: var(--darkblue);
     cursor: pointer;
-    font-size: 1em;
+    font-size: 0.9em;
+    text-align: right;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
