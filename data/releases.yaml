@@ -1,3 +1,11 @@
+- version: v1.3.0
+  changes:
+  - various developer experience fixes (migration to SCSS and better use of modules)
+  - 3D blobs option
+  - ability to customize block message
+  - improve <a href="https://getreflect.app/onboarding">onboarding page</a> to enable setting initial configuration
+  hash: 21a44ca
+
 - version: v1.2.2
   changes:
   - made background script persistent again (should solve NLP model input delay issues on block page)
