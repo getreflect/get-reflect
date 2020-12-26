@@ -1,0 +1,138 @@
+table {
+    width: 100%;
+}
+
+table p {
+    font-size: 1em;
+}
+
+.onboarding-main .lt-flex-66 {
+    pointer-events: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+input[type=number] {
+    width: 5em;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5em 1em;
+    font-family: "circular-lt";
+    color: var(--darkblue);
+    cursor: pointer;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=text] {
+    width: 22.5em;
+    margin-right: 1em;
+    border-radius: 20px;
+    border: 1.5px solid var(--darkblue);
+    padding: 0.5em 1.5em;
+    font-family: "circular-lt";
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type=text].short {
+    width: 12.5em;
+    margin-right: 0;
+}
+
+input[type=submit] {
+    border-radius: 20px;
+    background-color: var(--darkblue);
+    color: var(--white);
+    border: 0px;
+    padding: calc(0.5em + 1.5px) 2em;
+    cursor: pointer;
+    font-family: "circular-lt";
+    font-size: 1em;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle, .toggle:after, .toggle:before, .toggle *, .toggle *:after, .toggle *:before, .toggle+.toggle-button {
+    box-sizing: border-box;
+}
+
+.toggle::selection, .toggle:after::selection, .toggle:before::selection, .toggle *::selection, .toggle *:after::selection, .toggle *:before::selection, .toggle+.toggle-button::selection {
+    background: none;
+}
+
+.toggle+.toggle-button {
+    outline: 0;
+    display: inline-block;
+    width: 3em;
+    height: 1.5em;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid var(--white);
+    user-select: none;
+}
+
+.toggle+.toggle-button:after, .toggle+.toggle-button:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
+.toggle+.toggle-button:after {
+    left: 0;
+}
+
+.toggle+.toggle-button:before {
+    display: none;
+}
+
+.toggle:checked+.toggle-button:after {
+    left: 50%;
+    background-color: var(--white);
+}
+
+.toggle:checked+.toggle-button {
+    background-color: var(--lightblue);
+}
+
+.toggle+.toggle-button {
+    padding: 2px;
+    transition: all 0.2s ease;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+}
+
+.toggle+.toggle-button:after {
+    transition: all 0.2s ease;
+    background: var(--white);
+    content: "";
+    border-radius: 10px;
+}
+
+.options_panel tr>td:nth-child(2) {
+    text-align: right;
+}
+
+th {
+    text-align: left;
+    padding: 0.5em 0.5em;
+    font-size: 1.5em;
+    font-family: circular;
+}
+
+#statusMessage {
+    font-family: "circular-lt";
+    font-size: 1em;
+    margin: 1em 0.5em 1.5em 0em;
+}

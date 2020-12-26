@@ -19,6 +19,11 @@
     {{.Content | safeCSS}}
 </style>
 {{end}}
+{{with resources.Get "/css/onboarding.css" | minify}}
+<style>
+    {{.Content | safeCSS}}
+</style>
+{{end}}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148413215-2"></script>
