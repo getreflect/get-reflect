@@ -43,23 +43,31 @@
     <div class="features">
         <h2>our features.</h2>
         <div class="currentFeatures lt-flex-row">
-            <div class="featureDiv lt-flex-25">
+            <div class="featureDiv lt-flex-33">
                 <img src="images/personalization.png" alt="logo">
                 <h3>personalized.</h3>
-                <p>you select websites you’d like to block.</p>
+                <p>you select websites you’d like to block. lots of buttons and knobs for you to customize reflect so it works for you.</p>
             </div>
-            <div class="featureDiv lt-flex-25">
+            <div class="featureDiv lt-flex-33">
                 <img src="images/privacy.png" alt="logo">
-                <h3>privacy.</h3>
-                <p>everything stays on your computer.</p>
+                <h3>privacy first.</h3>
+                <p>everything stays on your computer, none of your data ever leaves your laptop. your browsing habits will stay exactly that: yours.</p>
             </div>
-            <div class="featureDiv lt-flex-25">
+            <div class="featureDiv lt-flex-33">
                 <img src="images/source.png" alt="logo">
                 <h3>open-source.</h3>
-                <p>always free and open-source. <a href="https://github.com/getreflect/reflect-chrome"
-                        rel="noreferrer">[source]</a></p>
+                <p>always free and open-source. find something that doesn't work or have a suggestion? you contribute or view our source code on <a href="https://github.com/getreflect/reflect-chrome" rel="noreferrer">GitHub</a>.</p>
             </div>
         </div>
+    </div>
+    <div class="lt-centre testimonial_section">
+        {{- range $.Site.Data.testimonials -}}
+        <div class="testimonial lt-card lt-hover lt-shadow">
+            <h1>”</h1>
+            <p class="feedback">{{.feedback}}</p>
+            <p class="user">&mdash; {{.user}}</p>
+        </div>
+        {{- end -}}
     </div>
     <div class="lt-centre install_section">
         <div id="install">
@@ -104,4 +112,16 @@
 
 <!--Link to JavaScript File-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    // toggle tesimonials
+    const n_elements = $(".testimonial").length;
+    var cur = Math.floor(Math.random() * n_elements)
+
+    const nextTestimonial = () => {
+        $(".testimonial").eq(cur).show().siblings().hide();
+        cur = (cur + 1) % n_elements;
+    }
+
+    nextTestimonial();
+</script>
 {{ end }}

@@ -1,4 +1,5 @@
 /* Fonts and Colours */
+
 @font-face {
     font-family: Circular;
     src: url(../circular.ttf);
@@ -256,25 +257,44 @@ a {
 }
 
 .featureDiv {
-    padding: 1em 1.5em;
     border-radius: 5px;
-    text-align: center;
-    min-width: 25%;
+    text-align: left;
+    /* min-width: 25%; */
 }
 
 .featureDiv h3 {
-    margin-bottom: 0em;
+    margin-bottom: 0.25em;
     color: var(--darkblue);
+}
+
+.testimonial_section {
+    margin-top: 8em;
+}
+
+.testimonial {
+    padding: 1em 2em;
+    text-align: left;
+}
+
+.testimonial>h1 {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: -0.5em;
+}
+
+.testimonial>p {
+    margin: 0.5em 0;
 }
 
 .featureDiv p {
     margin: 0;
+    margin-right: 2em;
     color: var(--darkblue);
     font-size: 1em;
 }
 
 .featureDiv img {
-    max-width: 60px;
+    max-width: 30px;
     width: auto;
     height: auto;
     align-self: center;
@@ -291,6 +311,10 @@ a {
 .white-bg {
     background: var(--white);
     color: var(--darkblue);
+}
+
+.suggestions>p {
+    font-size: 1em;
 }
 
 .profileImages {
