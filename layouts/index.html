@@ -71,6 +71,7 @@
         <div class="testimonial">
             <h1>”</h1>
             <p class="feedback">{{.feedback}}</p>
+            <img class="star_rating" src="images/ratings.png">
             <p class="user">&mdash; {{.user}}</p>
         </div>
         {{- end -}}
@@ -78,8 +79,7 @@
     <div class="lt-centre install_section">
         <div id="install">
             <h2>install.</h2>
-            <p>ready to reclaim your productivity? join us in our mission to help people work distraction-free with
-                more intention and purpose.</p>
+            <p>ready to reclaim your productivity? join us in our mission to help people work distraction-free with more intention and purpose.</p>
             <a href="https://chrome.google.com/webstore/detail/reflect/bicebchdpeichdlmoaflplakefkjkade"
                 target="_blank" rel="noreferrer" class="blue_button shadow lt-hover download">
                 <img src="images/chrome.png" class="download-icon" alt="Chrome Logo">
@@ -90,6 +90,10 @@
                 <img src="images/firefox.png" class="download-icon" alt="Firefox Logo">
                 install for Firefox
             </a>
+            <div class="install_stats">
+                <p>4.93 stars. 750+ active users.</p>
+                <img class="star_rating" src="images/ratings.png">
+            </div>
         </div>
     </div>
     <div class="releases">
@@ -123,10 +127,14 @@
     const n_elements = $(".testimonial").length;
     var cur = Math.floor(Math.random() * n_elements)
 
-    const maxHeight = Math.max.apply(null, $(".testimonial").map(function () {
-        return $(this).height();
-    }).get())
-    $(".testimonial_section").height(maxHeight)
+    const setTestimonialHeight = () => {
+        const maxHeight = Math.max.apply(null, $(".testimonial").map(function () {
+            return $(this).height();
+        }).get())
+        $(".testimonial_section").height(maxHeight)
+    }
+
+    window.onresize = setTestimonialHeight
 
     const nextTestimonial = () => {
         $(".testimonial").eq(cur).slideDown("slow").siblings(".testimonial").slideUp("slow");
@@ -134,6 +142,6 @@
     }
 
     nextTestimonial();
-    setInterval(nextTestimonial, 4000);
+    setInterval(nextTestimonial, 6000);
 </script>
 {{ end }}

@@ -281,6 +281,26 @@ a {
     position: relative;
 }
 
+.star_rating {
+    width: 8em;
+    padding: 1em;
+    display: block;
+    margin: auto;
+}
+
+.install_stats {
+    opacity: 0.4;
+    margin: 2em;
+}
+
+.install_stats p {
+    margin: 0
+}
+
+.install_stats img {
+    padding: 0.5em;
+}
+
 .testimonial {
     padding: 1em 2em;
     margin: auto;
