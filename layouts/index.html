@@ -7,7 +7,12 @@
             <h1>reflect.</h1>
             <p>a website blocker for <br> the productive.</p>
             <br><br>
-            <a id="ready_button" class="lt-hover white_button shadow">i'm ready</a>
+            <a href="https://chrome.google.com/webstore/detail/reflect/bicebchdpeichdlmoaflplakefkjkade" target="_blank"
+            rel="noreferrer" class="white_button shadow lt-hover download">
+                <img src="images/chrome_blue.png" class="download-icon" alt="Chrome Logo">
+                install for Chrome
+            </a>
+            <a id="ready_button" class="lt-hover blue_button shadow">learn more</a>
         </div>
 
         <div class="lt-flex-50">
@@ -61,10 +66,12 @@
         </div>
     </div>
     <div class="lt-centre testimonial_section">
+        <img class="testimonial_decal" src="images/testimonial_decal.png">
         {{- range $.Site.Data.testimonials -}}
-        <div class="testimonial lt-card lt-hover lt-shadow">
+        <div class="testimonial">
             <h1>”</h1>
             <p class="feedback">{{.feedback}}</p>
+            <img class="star_rating" src="images/ratings.png">
             <p class="user">&mdash; {{.user}}</p>
         </div>
         {{- end -}}
@@ -72,8 +79,7 @@
     <div class="lt-centre install_section">
         <div id="install">
             <h2>install.</h2>
-            <p>ready to reclaim your productivity? join us in our mission to help people work distraction-free with
-                more intention and purpose.</p>
+            <p>ready to reclaim your productivity? join us in our mission to help people work distraction-free with more intention and purpose.</p>
             <a href="https://chrome.google.com/webstore/detail/reflect/bicebchdpeichdlmoaflplakefkjkade"
                 target="_blank" rel="noreferrer" class="blue_button shadow lt-hover download">
                 <img src="images/chrome.png" class="download-icon" alt="Chrome Logo">
@@ -84,6 +90,10 @@
                 <img src="images/firefox.png" class="download-icon" alt="Firefox Logo">
                 install for Firefox
             </a>
+            <div class="install_stats">
+                <p>4.93 stars. 750+ active users.</p>
+                <img class="star_rating" src="images/ratings.png">
+            </div>
         </div>
     </div>
     <div class="releases">
@@ -117,11 +127,21 @@
     const n_elements = $(".testimonial").length;
     var cur = Math.floor(Math.random() * n_elements)
 
+    const setTestimonialHeight = () => {
+        const maxHeight = Math.max.apply(null, $(".testimonial").map(function () {
+            return $(this).height();
+        }).get())
+        $(".testimonial_section").height(maxHeight)
+    }
+
+    window.onresize = setTestimonialHeight
+
     const nextTestimonial = () => {
-        $(".testimonial").eq(cur).show().siblings().hide();
+        $(".testimonial").eq(cur).slideDown("slow").siblings(".testimonial").slideUp("slow");
         cur = (cur + 1) % n_elements;
     }
 
     nextTestimonial();
+    setInterval(nextTestimonial, 6000);
 </script>
 {{ end }}
