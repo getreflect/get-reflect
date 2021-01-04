@@ -179,6 +179,11 @@ a {
     margin-left: 0;
 }
 
+.splashText>p {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
 /* Intro */
 
 .intro {
@@ -255,8 +260,8 @@ a {
 }
 
 .mockup {
-    margin-top: 3em;
-    max-width: 600px;
+    margin-top: 2em;
+    max-width: 750px;
     width: auto;
     height: auto;
 }

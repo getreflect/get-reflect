@@ -123,11 +123,17 @@
     const n_elements = $(".testimonial").length;
     var cur = Math.floor(Math.random() * n_elements)
 
+    const maxHeight = Math.max.apply(null, $(".testimonial").map(function () {
+        return $(this).height();
+    }).get())
+    $(".testimonial_section").height(maxHeight)
+
     const nextTestimonial = () => {
-        $(".testimonial").eq(cur).show().siblings(".testimonial").hide();
+        $(".testimonial").eq(cur).slideDown("slow").siblings(".testimonial").slideUp("slow");
         cur = (cur + 1) % n_elements;
     }
 
     nextTestimonial();
+    setInterval(nextTestimonial, 4000);
 </script>
 {{ end }}
