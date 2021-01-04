@@ -50,4 +50,7 @@
     .SMImage {
         padding-left: none !important;
     }
+    .testimonial_decal {
+        display: none;
+    }
 }

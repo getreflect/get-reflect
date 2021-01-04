@@ -7,7 +7,12 @@
             <h1>reflect.</h1>
             <p>a website blocker for <br> the productive.</p>
             <br><br>
-            <a id="ready_button" class="lt-hover white_button shadow">i'm ready</a>
+            <a href="https://chrome.google.com/webstore/detail/reflect/bicebchdpeichdlmoaflplakefkjkade" target="_blank"
+            rel="noreferrer" class="white_button shadow lt-hover download">
+                <img src="images/chrome_blue.png" class="download-icon" alt="Chrome Logo">
+                install for Chrome
+            </a>
+            <a id="ready_button" class="lt-hover blue_button shadow">learn more</a>
         </div>
 
         <div class="lt-flex-50">
@@ -61,8 +66,9 @@
         </div>
     </div>
     <div class="lt-centre testimonial_section">
+        <img class="testimonial_decal" src="images/testimonial_decal.png">
         {{- range $.Site.Data.testimonials -}}
-        <div class="testimonial lt-card lt-hover lt-shadow">
+        <div class="testimonial">
             <h1>”</h1>
             <p class="feedback">{{.feedback}}</p>
             <p class="user">&mdash; {{.user}}</p>
@@ -118,7 +124,7 @@
     var cur = Math.floor(Math.random() * n_elements)
 
     const nextTestimonial = () => {
-        $(".testimonial").eq(cur).show().siblings().hide();
+        $(".testimonial").eq(cur).show().siblings(".testimonial").hide();
         cur = (cur + 1) % n_elements;
     }
 
