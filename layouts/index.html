@@ -128,7 +128,7 @@
     const n_elements = testimonials.length;
 
     // const n_elements = $(".testimonial").length;
-    let cur = Math.floor(Math.random() * n_elements);
+    let current = Math.floor(Math.random() * n_elements);
 
     const setTestimonialHeight = () => {
         testimonials = Array.from(testimonials);
@@ -142,8 +142,17 @@
     window.onresize = setTestimonialHeight;
 
     const nextTestimonial = () => {
-        $(".testimonial").eq(cur).slideDown("slow").siblings(".testimonial").slideUp("slow");
-        cur = (cur + 1) % n_elements;
+        // play animation on next testimonial
+        testimonials[current].style.transition = ("all 0.4s ease-in-out");
+        for (let i = 0; i < n_elements; i++) {
+            if (i !== current) {
+                testimonials[i].style.transform = "translateY(-100%)";
+            }
+        }
+        testimonials[current].style.transform = "translateY(100%)";
+        
+        /*$(".testimonial").eq(current).slideDown("slow").siblings(".testimonial").slideUp("slow");*/
+        current = (current + 1) % n_elements;
     }
 
     nextTestimonial();
