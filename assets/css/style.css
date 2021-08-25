@@ -279,6 +279,10 @@ a {
 .testimonial_section {
     margin-top: 8em;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
 }
 
 .star_rating {
@@ -302,10 +306,13 @@ a {
 }
 
 .testimonial {
+    position: absolute;
     padding: 1em 2em;
     margin: auto;
     width: 60%;
     text-align: center;
+    transition: all 1s ease-in-out;
+    background-color: #FFFFFF;
 }
 
 .testimonial_decal {

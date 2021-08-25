@@ -143,13 +143,13 @@
 
     const nextTestimonial = () => {
         // play animation on next testimonial
-        testimonials[current].style.transition = ("all 0.4s ease-in-out");
+        // testimonials[current].style.transition = ("all 0.4s ease-in-out");
         for (let i = 0; i < n_elements; i++) {
             if (i !== current) {
-                testimonials[i].style.transform = "translateY(-100%)";
+                testimonials[i].style.transform = "translateY(200%)";
             }
         }
-        testimonials[current].style.transform = "translateY(100%)";
+        testimonials[current].style.transform = "translateY(0)";
         
         /*$(".testimonial").eq(current).slideDown("slow").siblings(".testimonial").slideUp("slow");*/
         current = (current + 1) % n_elements;
