@@ -130,8 +130,7 @@
 
     const setTestimonialHeight = () => {
         testimonials = Array.from(testimonials);
-        const maxHeight = Math.max.apply(null, testimonials.map(testimonial => {
-            return testimonial.clientHeight;
+        const maxHeight = Math.max.apply(null, testimonials.map(testimonial => testimonial.clientHeight
         }));
         document.getElementsByClassName("testimonial_section")[0].style.height = `${maxHeight}px`;
     }
