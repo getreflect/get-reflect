@@ -311,7 +311,7 @@ a {
     margin: auto;
     width: 60%;
     text-align: center;
-    transition: all 1s ease-in-out;
+    transition: all 1s cubic-bezier(.25, .8, .25, 1);
     background-color: #FFFFFF;
 }
 
