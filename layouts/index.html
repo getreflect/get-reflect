@@ -120,25 +120,34 @@
     {{partial "footer.html" .}}
 </div>
 
-<!--Link to JavaScript File-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--Testimonial animation-->
 <script>
     // toggle tesimonials
-    const n_elements = $(".testimonial").length;
-    var cur = Math.floor(Math.random() * n_elements)
+    let testimonials = document.getElementsByClassName("testimonial");
+    const n_elements = testimonials.length;
+
+    let current = Math.floor(Math.random() * n_elements);
 
     const setTestimonialHeight = () => {
-        const maxHeight = Math.max.apply(null, $(".testimonial").map(function () {
-            return $(this).height();
-        }).get())
-        $(".testimonial_section").height(maxHeight)
+        testimonials = Array.from(testimonials);
+        const maxHeight = Math.max.apply(null, testimonials.map(testimonial => testimonial.clientHeight
+        }));
+        document.getElementsByClassName("testimonial_section")[0].style.height = `${maxHeight}px`;
     }
 
-    window.onresize = setTestimonialHeight
+    setTestimonialHeight();
+    window.onresize = setTestimonialHeight;
 
     const nextTestimonial = () => {
-        $(".testimonial").eq(cur).slideDown("slow").siblings(".testimonial").slideUp("slow");
-        cur = (cur + 1) % n_elements;
+        // play animation on next testimonial
+        for (let i = 0; i < n_elements; i++) {
+            if (i !== current) {
+                testimonials[i].style.transform = "translateY(200%)";
+            }
+        }
+        testimonials[current].style.transform = "translateY(0)";
+        
+        current = (current + 1) % n_elements;
     }
 
     nextTestimonial();
