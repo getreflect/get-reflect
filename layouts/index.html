@@ -122,7 +122,20 @@
 
 <!--Testimonial animation-->
 <script>
-    // toggle tesimonials
+    // smooth scrolling link
+    const scrollTo = element => {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: element.offsetTop
+        });
+    }
+
+    document.getElementById("ready_button").addEventListener('click', () => {
+        scrollTo(document.getElementsByClassName("features")[0]);
+    });
+
+    // testimonial animation
     let testimonials = document.getElementsByClassName("testimonial");
     const n_elements = testimonials.length;
 
@@ -130,8 +143,7 @@
 
     const setTestimonialHeight = () => {
         testimonials = Array.from(testimonials);
-        const maxHeight = Math.max.apply(null, testimonials.map(testimonial => testimonial.clientHeight
-        }));
+        const maxHeight = Math.max.apply(null, testimonials.map(testimonial => testimonial.clientHeight));
         document.getElementsByClassName("testimonial_section")[0].style.height = `${maxHeight}px`;
     }
 
