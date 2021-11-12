@@ -5,9 +5,6 @@
     .currentFeatures, .splash {
         flex-direction: column !important;
     }
-    .transition {
-        margin-bottom: -3.5em !important;
-    }
     .lt-flex-66 {
         flex: none;
     }
@@ -32,12 +29,6 @@
     .introHeader {
         margin-top: 1em !important;
     }
-    .features {
-        margin-top: 3em !important;
-    }
-    .featureDiv {
-        margin: 1em 0em !important;
-    }
     .socialMedia {
         flex-direction: row !important;
     }
@@ -52,5 +43,19 @@
     }
     .testimonial_decal {
         display: none;
+    }
+}
+@media all and (max-width: 720px) {
+    .transition {
+        margin-bottom: -3.5em !important;
+    }
+    .currentFeatures {
+        flex-direction: column !important;
+    }
+    .features {
+        margin-top: 3em !important;
+    }
+    .featureDiv {
+        margin: 1em 0em !important;
     }
 }

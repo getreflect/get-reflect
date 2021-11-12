@@ -167,6 +167,9 @@ a {
     color: var(--darkblue);
     cursor: pointer;
 }
+.main {
+    overflow: hidden;
+}
 
 .splash {
     align-items: center;
