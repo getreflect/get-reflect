@@ -1,3 +1,10 @@
+- version: v1.4.0
+  changes:
+  - add option to block exact website URL
+  - treat subdomains as separate websites when blocking sites
+  - enable keyboard shortcuts to toggle blocking with Ctrl+Shift+O (customizable in settings)
+  hash: 58d831e
+
 - version: v1.3.0
   changes:
   - various developer experience fixes (migration to SCSS and better use of modules)
