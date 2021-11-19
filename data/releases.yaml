@@ -1,7 +1,7 @@
 - version: v1.4.0
   changes:
-  - add option to block exact website URL
-  - treat subdomains as separate websites when blocking sites
+  - add option to block exact website URL (e.g. google.com/search?q=)
+  - treat subdomains as separate websites when blocking sites (e.g. if meet.google.com is blocked, google.com and mail.google.com will not be blocked
   - enable keyboard shortcuts to toggle blocking with Ctrl+Shift+O (customizable in settings)
   hash: 58d831e
 
